@@ -25,7 +25,8 @@ class FindLocation:
         else:
             return ("Not Correct File")
         
-    def get_location(self, coords):
+   def get_location(self, filename):
+        coords = self.get_coords(filename)
         locator = Nominatim(user_agent="myGeocoder")
         location = locator.reverse(coords)
 
