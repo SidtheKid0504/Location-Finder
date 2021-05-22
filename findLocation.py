@@ -31,7 +31,3 @@ class FindLocation:
 
         return location.raw['address']
 
-Location = FindLocation()
-coords = Location.get_coords('test.MOV')
-location = Location.get_location(coords)
-print(location['state']+ ', ' + location['country'])
